@@ -8,7 +8,7 @@ import com.orderservice.model.Customer;
 
 @FeignClient(name="customer-service",url="http://localhost:8082")
 public interface CustomerClient {
-	
+	// this is feignclient server
 	@GetMapping("/customer/{id}")
 	Customer getCustomerById(@PathVariable("id") Long id);
 
